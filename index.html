@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio Dev</title>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-blur"></div>
+<header>
+    <div class="logo">PortifolioDev</div>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#">Habilidades</a>
+        <a href="#">Projetos</a>
+        <a href="#">Experiência</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-text">
+        <h1>Olá, sou o <span>Iago Muniz</span></h1>
+        <h3>Desenvolvedor Web</h3>
+        <p>"Transformando código em criatividade e soluções"</p>
+        <div class="buttons">
+            <button class="btn btn-purple">Ver Projetos</button>
+            <button class="btn btn-outline">Contato</button>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"><img src="icon/linkedin.png" width="30px" height="30px"></img></i></a>
+            <a href="#"><i class="fab fa-github"><img src="icon/github.png" width="30px" height="30px"></img></i></a>
+            <a href="#"><i class="fab fa-instagram"><img src="icon/instagram.png" width="30px" height="30px"></img></i></a>
+            <a href="#"><i class="fab fa-whatsapp"><img src="icon/whatsapp.png" width="30px" height="30px"></img></i></a>
+        </div>
+    </div>
+    <div class="hero-img">
+        <img src="imgs/minha foto.jpeg" alt="Foto de Iago Muniz">
+    </div>
+</section>
+<hr class="section-divider">
+<!-- Seção "Sobre" -->
+<section class="about-section" id="sobre">
+    <center>
+<h2 class="section-title">Sobre mim</h2>
+</center>
+    <div class="about-content">
+    <div class="about-image">
+      <!-- troque pelo caminho real da sua imagem -->
+      <img src="imgs/sobre min(1).png" alt="Foto de Iago Muniz" width="600" height="400">
+    </div>
+    <div class="about-text">
+      <h2>Quem sou?</h2>
+   <div id="bio">
+    <p>Sou <strong>Iago José Catharino Muniz da Silva</strong>, mais conhecido como <strong>Muniz</strong> no meio online. Tenho 18 anos e atualmente curso o segundo semestre de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>. Minha trajetória na área de tecnologia começou cedo, com cursos de <strong>hardware</strong> e <strong>Informática para Internet</strong>, e desde então venho construindo uma base sólida em programação, redes e segurança.</p>
+
+    <p>Hoje, já atuo como <strong>freelancer em desenvolvimento web</strong>: participei da criação de diversos site como o: <em>Nani Arquitetura</em> junto a um parceiro e realizei manutenção em diversos projetos de clientes, sempre focado em entregar soluções funcionais e com bom desempenho. Também trago no currículo experiências fora da tecnologia, como meu estágio na <strong>Prefeitura de Jundiaí</strong> , que me deram responsabilidade, disciplina e contato direto com diferentes realidades.</p>
+
+    <div class="hidden" id="resto">
+      <p>Meu grande objetivo é crescer na área de <strong>cibersegurança</strong>, expandindo depois para <strong>mestrados</strong> e até explorando outras áreas de interesse, como <strong>psicanálise</strong>, que dialoga com minha curiosidade em compreender pessoas e sistemas. Além disso, planejo migrar minha marca pessoal, a <strong>jund.street</strong>, para o mundo da tecnologia, unindo criatividade, estilo e inovação.</p>
+
+      <p>Valorizo muito as experiências que me marcaram — como o tempo no <strong>EncinoTecnico (2Tec e 3Tec)</strong>, onde aprendi que evolução vai muito além da sala de aula, sendo feita também de amizade, troca e convivência. Tenho orgulho de ter crescido em meio a esses desafios e sigo buscando mais autoconfiança, disciplina e conquistas.</p>
+
+      <p>Carrego duas frases que refletem bem minha mentalidade:</p>
+
+      <p><em>“O poder retém o pior, e corrompe os melhores.”</em></p>
+      <p><em>“Eu dou o melhor de mim, mas sei que ainda falta muito para mim ser o melhor.”</em></p>
+
+      <p>No fim, meu foco é simples: <strong>crescer como profissional</strong>, aprender com cada experiência e usar a tecnologia para transformar ideias em impacto real.</p>
+    </div>
+    <button id="lerMais">Ler mais</button>
+
+<br>
+<br>
+<br>
+  </div>
+      <P id="soc">"Viver não é esperar a tempestade passar.
+        É aprender a dançar na chuva."              </P>
+        <b id="socrat">-Sócrates</b>
+      <div class="contact-info">
+  <p><strong>Nome:</strong><br> Iago José Cathariono Muniz da Silva</p>
+  <p><strong>Telefone:</strong><br> (11) 91025-7940</p>
+  <p><strong>Email:</strong><br> Muniziago179@gmail.com</p>
+  <p><strong>Cidade:</strong><br> Jundiaí, SP</p>
+   <a href="assets/cv-iago-muniz.pdf" download class="btn btn-purple download-cv">Baixar Cv</a>
+</div>
+    </div>
+  </div>
+
+    <script>
+    document.getElementById("lerMais").addEventListener("click", function() {
+      const resto = document.getElementById("resto");
+      if (resto.classList.contains("hidden")) {
+        resto.classList.remove("hidden");
+        this.textContent = "Ler menos";
+      } else {
+        resto.classList.add("hidden");
+        this.textContent = "Ler mais";
+      }
+    });
+  </script>
+
+
+<style>
+        .hidden {
+      display: none;
+    }
+    #lerMais {
+      margin-top: 10px;
+      background:transparent;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: -5px;
+    }
+    #lerMais:hover {
+      background: #0056b3;
+    }
+</style>
+
+
+</section>
+
+<!--Hbilidades-->
+
+
+<section class="habilidades" id="habilidades">
+    <h2 class="titulo-secao"><span>Minhas</span> Habilidades</h2>
+
+    <div class="container-habilidades">
+        
+        <!-- Coluna Esquerda - Habilidades Profissionais -->
+        <div class="dir">
+
+            <div class="coluna">
+                <h3>Habilidades Profissionais</h3>
+
+          <div class="skill">
+    <p>Comunicação</p>
+    <div class="barra">
+        <div class="progresso" style="width: 90%;">90%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Trabalho em Equipe</p>
+    <div class="barra">
+        <div class="progresso" style="width: 85%;">85%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Organização</p>
+    <div class="barra">
+        <div class="progresso" style="width: 80%;">80%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Aprendizado Rápido</p>
+    <div class="barra">
+        <div class="progresso" style="width: 95%;">95%</div>
+    </div>
+</div>
+
+                
+        </div>
+    </div>
+        
+        <!-- Coluna Direita - Habilidades Técnicas -->
+               <div class="esc">
+        <div class="coluna">
+            <h3>Habilidades Técnicas</h3>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="barra">
+        <div class="progresso" style="width: 95%;">95%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>CSS</p>
+    <div class="barra">
+        <div class="progresso" style="width: 90%;">90%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>JavaScript</p>
+    <div class="barra">
+        <div class="progresso" style="width: 75%;">75%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>PHP</p>
+    <div class="barra">
+        <div class="progresso" style="width: 70%;">70%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>WordPress</p>
+    <div class="barra">
+        <div class="progresso" style="width: 85%;">85%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Banco de Dados (MySQL)</p>
+    <div class="barra">
+        <div class="progresso" style="width: 65%;">65%</div>
+    </div>
+</div>
+
+<div class="skill">
+    <p>Cibersegurança (básico)</p>
+    <div class="barra">
+        <div class="progresso" style="width: 50%;">50%</div>
+    </div>
+</div>
+        
+
+
+
+            
+        </div>
+     </div>
+    </div>
+    <!-- Tecnologias -->
+    <div class="tecnologias">
+        <h3>Tecnologias que <b style="color: #8a2be2;">Utilizo</b></h3>
+        <div class="grid-tecnologias">
+            <div class="tecnologia">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <p>HTML5</p>
+            </div>
+            <div class="tecnologia">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS3</p>
+            </div>
+            <div class="tecnologia destaque">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+             <div class="tecnologia">
+                <img src="icon/php (1).png" alt="CSS">
+                <p>PHP</p>
+            </div>
+             <div class="tecnologia">
+                <img src="icon/wordpress.png" alt="CSS">
+                <p>Wordpress</p>
+            </div>
+             <div class="tecnologia">
+                <img src="icon/servidor-sql.png" alt="CSS">
+                <p>SQL</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJETOS ===== -->
+<section class="projetos" id="projetos">
+  <h2 class="titulo-secao"><span>Meus</span> Projetos</h2>
+
+  <!-- Filtro de hashtags -->
+  <div class="filtro-projetos">
+    <button class="filtro-btn ativo" data-filter="all">Todos</button>
+    <button class="filtro-btn" data-filter="web">Web</button>
+    <button class="filtro-btn" data-filter="php">PHP</button>
+    <button class="filtro-btn" data-filter="seguranca">Segurança</button>
+    <button class="filtro-btn" data-filter="wordpress">WordPress</button>
+  </div>
+
+  <!-- Grid dos projetos -->
+  <div class="grid-projetos">
+    <!-- Exemplo de card -->
+    <div class="projeto-card" data-tags="web php wordpress">
+        <a href="https://www.nanniarquitetura.gectecnologia.com/">
+            <img src="projetos img/Naniarquitetura.jpeg" alt="Naniarquitetura">
+        </a>
+            <h3>Naniarquitetura</h3>
+            <p>Breve descrição do projeto 1.</p>
+            <div class="hashtags">#web #php #Wordpress</div>
+        </div>
+
+  
+
+    <!-- Adicione quantos quiser, eles se adaptam -->
+   
+
+    <!-- Esses vão aparecer só depois do "Ver mais" -->
+    
+  </div>
+
+  <!-- Botão ver mais -->
+  <div class="ver-mais-container">
+    <button id="ver-mais" class="btn btn-purple" onclick="alerta()">Ver mais</button>
+  </div>
+</section>
+
+<script>
+
+function alerta (){
+alert("Por em quanto é só.")
+
+}
+
+</script>
+
+
+
+<!-- ===== EXPERIÊNCIA E EDUCAÇÃO ===== -->
+<section class="timeline-section" id="trajetoria">
+  <h2 class="titulo-secao"><span>Minha</span> Trajetória</h2>
+
+  <div class="timeline-container">
+    <!-- Coluna Experiência -->
+    <div class="timeline-box">
+      <h3 class="timeline-titulo">Experiência</h3>
+      <div class="timeline">
+       <div class="timeline-item">
+    <span class="circle"></span>
+    <div class="content">
+      <h4>Desenvolvimento Front-end</h4>
+      <p>Criação de interfaces responsivas, sites e landing pages utilizando HTML, CSS, JavaScript e frameworks modernos.</p>
+      <span class="date">Avançado</span>
+    </div>
+  </div>
+
+        <div class="timeline-item">
+    <span class="circle"></span>
+    <div class="content">
+      <h4>Desenvolvimento Back-end</h4>
+      <p>Experiência com PHP, Node.js e integração com bancos de dados MySQL e MongoDB.</p>
+      <span class="date">Intermediário</span>
+    </div>
+  </div>
+
+<div class="timeline-item">
+    <span class="circle"></span>
+    <div class="content">
+      <h4>React & React Native</h4>
+      <p>Criação de aplicações web e mobile com componentes reutilizáveis e boas práticas de performance.</p>
+      <span class="date">Intermediário</span>
+    </div>
+  </div>
+
+
+  <div class="timeline-item">
+    <span class="circle"></span>
+    <div class="content">
+      <h4>Segurança em Aplicações Web</h4>
+      <p>Conhecimento em proteção contra vulnerabilidades comuns, como SQL Injection, XSS e CSRF.</p>
+      <span class="date">Intermediário</span>
+    </div>
+  </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- Coluna Educação -->
+    <div class="timeline-box">
+      <h3 class="timeline-titulo">Educação</h3>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="content">
+            <h4>Auxiliar de informatica para internet</h4>
+            <p>Gestçao de conteudo web</p>
+            <p>Desenvolvimento para dispositios moveis</p>
+            <p>Sistemas web 1</p>
+            <p>Arte digital</p>
+            <p>Fundamentos da informatica</p>
+            <p>Progrmação e algoritimos</p>
+            <p>Interface web 1</p>
+            <span class="date">2023 - 2024</span>
+          </div>
+        </div>
+        
+
+
+
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="content">
+              <h4>Tecnico em informatica para internet</h4>
+            <p>Banco de dados</p>
+            <p>Etica e cidadania Organizaçional</p>
+            <p>Acecibilidade digital</p>
+            <p>Usabilidade e design de interação</p>
+            <p>Interface web 2</p>
+            <p>Gestão de conteudo web 2</p>
+            <span class="date">2024 - 2025 </span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="circle"></span>
+          <div class="content">
+              <h4>Analise e desenvolvimento de sisemas</h4>
+    <b style="color: black;">1 semestre</b>
+              <p>  CÁLCULO FUNDAMENTAL</p>
+          <p>  ENGENHARIA DE SOFTWARE</p>
+           <p> INGLÊS TÉCNICO</p>
+           <p> PROGRAMAÇÃO FRONTEND DESIGN</p>
+            <p>SISTEMAS DE INFORMAÇÃO GERENCIAL</p>
+<b style="color: black;">2 semestre</b>
+           <p> ALGORITMOS E LÓGICA DE PROGRAMAÇÃO</p>
+          <p>  COMPETÊNCIAS EM COMUNICAÇÃO ESCRITA</p>
+           <p> ESTATÍSTICA</p>
+           <p> GESTÃO DE PROJETOS EM TI</p>
+           <p> RELACIONAMENTOS PROFISSIONAIS E INTELIGÊNCIA EMOCIONAL</p>
+           <p> SISTEMAS OPERACIONAIS</p>
+<b style="color: black;">3 semestre</b>
+            <p>BANCO DE DADOS</p>
+            <p>DESIGN PARA WEB</p>
+            <p>INTERFACE HOMEM-MÁQUINA</p>
+            <p>PROGRAMAÇÃO ORIENTADA A OBJETOS</p>
+            <p>RESOLUÇÃO DE PROBLEMAS</p>
+            <p>TECNOLOGIAS DISRUPTIVAS</p>
+            <p>TÓPICOS EM LINGUAGEM DE PROGRAMAÇÃO</p>
+<b style="color: black;">4 semestre</b>
+           <p> BANCO DE DADOS NÃO RELACIONAIS</p>
+            <p>COMPUTAÇÃO PARA DISPOSITIVOS MÓVEIS</p>
+            <p>ELETIVA</p>
+            <p>MATERIAL DESIGN FRAMEWORK</p>
+            <p>METODOLOGIAS ÁGEIS</p>
+            <p>PRÁTICAS EM ESG
+            <p>QUALIDADE E TESTE DE SOFTWARE</p>
+            <p>TÓPICOS FRAMEWORK</p>
+<b style="color: black;">5 semestre</b>
+            <p>CERTIFICAÇÃO TÉCNICA</p>
+            <p>CYBERSECURITY</p>
+            <p>MODELAGEM DE SISTEMAS UML</p>
+            <p>SISTEMAS DISTRIBUÍDOS APLICADOS</p>
+            <p>SPRING FRAMEWORK</p>
+<b style="color: black;">Complementares</b>
+            <p>LÍNGUA BRASILEIRA DE SINAIS</p>
+            <p>PRÁTICA EXTENSIONISTA</p>
+            <p>ATIVIDADES COMPLEMENTARES</p>
+            <span class="date">2025 - Atual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CONTATO ===== -->
+<section class="contato-section" id="contato">
+  <h2 class="titulo-secao">Entre em <span>Contato</span></h2>
+  <p class="sub-texto">Gostou do meu trabalho? Entre em contato para conversarmos sobre oportunidades!</p>
+
+  <div class="contato-container">
+    <!-- Informações -->
+    <div class="contato-info">
+      <h3>Informações de Contato</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> Muniziago179@gmail.com</li>
+        <li><i class="fas fa-phone"></i> +55 (11) 91025-7940</li>
+        <li><i class="fas fa-map-marker-alt"></i> Jundiaí, SP - Brasil</li>
+      </ul>
+
+      <h3>Redes Sociais</h3>
+      <div class="redes-sociais">
+        <a href="#"><i class="fab fa-linkedin"><img src="icon/linkedin.png" width="30px" height="30px"></img></i></a>
+        <a href="#"><i class="fab fa-github"><img src="icon/instagram.png" width="30px" height="30px"></img></i></a>
+        <a href="#"><i class="fab fa-instagram"><img src="icon/github.png" width="30px" height="30px"></img></i></a>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <div class="contato-form">
+      <h3>Envie uma Mensagem</h3>
+      <form>
+        <div class="linha-form">
+          <input type="text" placeholder="Seu Nome" required>
+          <input type="email" placeholder="Seu Email" required>
+        </div>
+        <input type="text" placeholder="Assunto" required>
+        <textarea placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
